@@ -12,28 +12,11 @@
     </div>
 </div>
 
-<div class="formgrid grid p-fluid">
-    <div class="field col-12 md:col-6">
-        <label for="firstname6">Firstname</label>
-        <input id="firstname6" type="text" pInputText />
-    </div>
-    <div class="field col-12 md:col-6">
-        <label for="lastname6">Lastname</label>
-        <input id="lastname6" type="text" pInputText />
-    </div>
-    <div class="field col-12">
-        <label for="address">Address</label>
-        <textarea id="address" type="text" rows="4" pInputTextarea></textarea>
-    </div>
-    <div class="field col-12 md:col-6">
-        <label for="city">City</label>
-        <input id="city" type="text" pInputText class="inputfield w-full">
-    </div>
-    <div class="field col-12 md:col-3">
-        <label for="state">State</label>
-    </div>
-    <div class="field col-12 md:col-3">
-        <label for="zip">Zip</label>
-        <input id="zip" type="text" pInputText />
-    </div>
-</div>
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+    </ng-template>
+    <ng-template pTemplate="end">
+        <input type="text" pInputText placeholder="Search" class="w-full" />
+    </ng-template>
+</p-menubar>
