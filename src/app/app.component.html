@@ -1,11 +1,7 @@
 <p-menubar [model]="items">
   <ng-template pTemplate="start">
-    <a routerLink="home" >
-        <img
-            [src]="getThemeImageSrc()"
-            height="40"
-            class="mr-2"
-        />
+    <a routerLink="home">
+      <img [src]="getThemeImageSrc()" height="40" class="mr-2" />
     </a>
   </ng-template>
   <ng-template pTemplate="end">
@@ -25,7 +21,6 @@
     </div>
   </ng-template>
 </p-menubar>
-
 <div class="card">
   <router-outlet></router-outlet>
 </div>
