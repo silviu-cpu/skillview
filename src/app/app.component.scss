@@ -1,8 +1,21 @@
+/* Styling for the .card component */
 .card {
-    background-color: var(--surface-card);
-    padding: 1.5rem;
-    -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-    border-radius: 4px;
-    margin: 2rem;
+  background-color: var(--surface-b); /* Use the saga-blue theme variable */
+  padding: 1.5rem;
+  border: 1px solid var(--surface-50); /* Adjust the border color based on the theme */
+  border-radius: 4px;
+  margin: 2rem;
+  box-shadow: 0 2px 4px 0 var(--gray-300); /* Updated box shadow */
+  position: relative;
+  z-index: 1;
+}
+
+:host ::ng-deep .p-component {
+    border-color: var(--surface-50) !important;
+    box-shadow: 0 2px 4px 0 var(--gray-300);
+}
+
+.particles-container {
+  position: relative;
+  z-index: -1; /* Lower z-index value to position below the card */
 }
