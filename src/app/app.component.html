@@ -1,22 +1,24 @@
-<div class="card">
-    <div class="flex align-items-center justify-content-center mb-4">
-        <a (click)="changeTheme('saga-blue')" class="mr-3 cursor-pointer">
-            <img src="assets/images/themes/saga-blue.png" width="50">
-        </a>
-        <a (click)="changeTheme('arya-blue')" class="mr-3 cursor-pointer">
-            <img src="assets/images/themes/arya-blue.png" width="50">
-        </a>
-        <a (click)="changeTheme('bootstrap4-dark-purple')" class="mr-3 cursor-pointer">
-            <img src="assets/images/themes/bootstrap4-dark-purple.svg" width="50">
-        </a>
-    </div>
-</div>
-
 <p-menubar [model]="items">
     <ng-template pTemplate="start">
         <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
     </ng-template>
     <ng-template pTemplate="end">
-        <input type="text" pInputText placeholder="Search" class="w-full" />
+        <div class="flex align-items-center justify-content-center">
+            <a (click)="changeTheme('saga-blue')" class="mr-3 cursor-pointer">
+                <span class="pi pi-sun"></span>
+            </a>
+            <a (click)="changeTheme('arya-blue')" class="mr-3 cursor-pointer">
+                <span class="pi pi-moon"></span>
+            </a>
+            <a (click)="changeTheme('bootstrap4-dark-purple')" class="mr-3 cursor-pointer">
+                <span class="pi pi-cloud"></span>
+            </a>
+        </div>
     </ng-template>
 </p-menubar>
+
+<div class="card">
+    <router-outlet></router-outlet>
+</div>
+
+
