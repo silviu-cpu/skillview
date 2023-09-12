@@ -14,6 +14,7 @@ export class AppComponent {
     items: MenuItem[] | undefined;
 
     ngOnInit() {
+        this.changeTheme('saga-blue')
         this.items = [
             {
                 label: 'File',
