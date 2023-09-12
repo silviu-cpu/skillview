@@ -99,7 +99,7 @@ export class AppComponent {
     }
 
     particlesLoaded(container: Container): void {
-        console.log(container);
+        
     }
 
     async particlesInit(engine: Engine): Promise<void> {
