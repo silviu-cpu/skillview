@@ -12,36 +12,36 @@ export class AppComponent {
     constructor(private themeService: ThemeService) {}
 
     items: MenuItem[] | undefined;
+    logo = 'dark-logo';
 
     ngOnInit(): void {
         this.changeTheme('saga-blue')
         this.items = [
             {
-                label: 'File',
-                icon: 'pi pi-fw pi-file',
+                label: 'Home',
                 routerLink: "home",
             },
             {
-                label: 'Edit',
-                icon: 'pi pi-fw pi-pencil',
+                label: 'About',
                 routerLink: "about"
             },
             {
-                label: 'Users',
-                icon: 'pi pi-fw pi-user',
-            },
-            {
-                label: 'Events',
-                icon: 'pi pi-fw pi-calendar',
-            },
-            {
-                label: 'Quit',
-                icon: 'pi pi-fw pi-power-off'
+                label: 'Projects',
             }
         ];
     }
 
+    getThemeImageSrc(): string {
+        return `../assets/images/themes/${this.logo}.svg`;
+    }
+    
     changeTheme(theme: string) {
+        if(theme !== 'saga-blue'){
+            this.logo = 'light-logo';
+        }
+        if(theme === 'saga-blue') {
+            this.logo = 'dark-logo';
+        }
         this.themeService.switchTheme(theme);
     }
 
