@@ -34,3 +34,24 @@ h3 {
     color: var(--surface-800);
     transition: ease-in 0.5s;
 }
+
+.card-container {
+    border: 1px solid var(--surface-400);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--surface-600);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-container:hover {
+    cursor: pointer;
+}
+
+.card-container:first-of-type {
+    margin-top: 20px;
+}
+
+:host ::ng-deep .p-button:hover {
+    cursor: pointer;
+}

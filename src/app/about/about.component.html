@@ -2,47 +2,71 @@
 <p class="mt-0 about-description">Just a quick glimpse.</p>
 
 <div class="grid flex sm:col-12">
-    <h3 class="col-6 xl:col-6 sm:col-12 connect-title">About</h3>
-    <div class="col-6 xl:col-6 sm:col-12 connect-container">
-      <p>Hello world, I'm Silviu!</p>
-      <p>I have a passion for coding and i am constantly improving my tech and soft skills. </p>
-      <p>When i am not coding, i am probably lifting weights, doing sports activities, playing video games or at a coffee shop :D</p>
-    </div>
+  <h3 class="col-6 xl:col-6 sm:col-12 connect-title">About</h3>
+  <div class="col-6 xl:col-6 sm:col-12 connect-container">
+    <p>Hello world, I'm Silviu.</p>
+    <p>
+      I'm passionate about coding, and I'm continually enhancing my technical and soft skills.
+    </p>
+    <p>
+      When I'm not immersed in coding, you'll likely find me lifting weights, participating in sports, enjoying video games, or sipping a cup of coffee at a local café :D
+    </p>
   </div>
+</div>
 
 <div class="grid flex sm:col-12">
   <h3 class="col-6 xl:col-6 sm:col-12 connect-title">Connect</h3>
   <div class="col-6 xl:col-6 sm:col-12 connect-container">
     <p>If you want to collaborate, feel free to connect with me.</p>
-    <a href="mailto:barbu.silviu92@gmail.com" class="flex justify-content-between contact-div"> 
+    <a
+      href="mailto:barbu.silviu92@gmail.com"
+      target="_blank"
+      class="flex justify-content-between contact-div"
+    >
       <div>
         <span class="pi pi-envelope mr-2"></span>
         Email
       </div>
       <span class="pi pi-arrow-up-right"></span>
     </a>
-    <a href="mailto:barbu.silviu92@gmail.com" class="flex justify-content-between contact-div"> 
+    <a
+      href="https://www.linkedin.com/in/silviu-barbu-30088a158/"
+      target="_blank"
+      class="flex justify-content-between contact-div"
+    >
       <div>
         <span class="pi pi-linkedin mr-2"></span>
         LinkedIn
       </div>
       <span class="pi pi-arrow-up-right"></span>
     </a>
-    <a href="mailto:barbu.silviu92@gmail.com" class="flex justify-content-between contact-div"> 
+    <a
+      href="https://github.com/silviu-cpu"
+      target="_blank"
+      class="flex justify-content-between contact-div"
+    >
       <div>
         <span class="pi pi-github mr-2"></span>
         Github
       </div>
       <span class="pi pi-arrow-up-right"></span>
     </a>
-    <a href="mailto:barbu.silviu92@gmail.com" class="flex justify-content-between contact-div"> 
+    <a
+      href="https://twitter.com/stramosi7160"
+      target="_blank"
+      class="flex justify-content-between contact-div"
+    >
       <div>
         <span class="pi pi-twitter mr-2"></span>
         Twitter
       </div>
       <span class="pi pi-arrow-up-right"></span>
     </a>
-    <a href="mailto:barbu.silviu92@gmail.com" class="flex justify-content-between contact-div"> 
+    <a
+      href="https://www.instagram.com/skillviu/"
+      target="_blank"
+      class="flex justify-content-between contact-div"
+    >
       <div>
         <span class="pi pi-instagram mr-2"></span>
         Instagram
@@ -56,16 +80,51 @@
   <h3 class="col-6 xl:col-6 sm:col-12 connect-title">Work</h3>
   <div class="col-6 xl:col-6 sm:col-12 connect-container">
     <p>2+ years of professional development experince</p>
-    <p>A lot of stuff</p>
-    <p>A lot of stuff</p>
-    <p>A lot of stuff</p>
+    <p-button (onClick)="downloadCV()" label="DOWNLOAD CV" class="p-button-raised p-button-rounded" styleClass="p-button-help"></p-button>
+    <div class="card-container">
+      <p>Software Engineer Frontend Focus</p>
+      <p><strong> Tremend Software Consulting </strong></p>
+      <p>Technologies and tools used: HTML, CSS, SCCS, JS, TypeScript, Angular 10 & 11, MongoDB, PostgreSQL, PHP, NodeJS, Linux </p>
+      <p class="about-description">07.2021 - 09.2023</p>
+    </div>
+    <div class="card-container">
+      <p>Education Mentor</p>
+      <p><strong> GoIT Fullstack Development Course</strong></p>
+      <p class="about-description">01.2023 - Present</p>
+    </div>
+    <div class="card-container">
+      <p>QA Engineer</p>
+      <p><strong>Liquid Software Development</strong></p>
+      <p>Technologies and tools used: HTML, CSS, SCCS, JS, Puppeteer </p>
+      <p class="about-description">08.2020 - 12.2020</p>
+    </div>
+    <div class="card-container">
+      <p>Big Data Engineer</p>
+      <p><strong>Gameloft</strong></p>
+      <p>Technologies and tools used: Java, Springboot, Maven, Elasticsearch, Linux </p>
+      <p class="about-description">07.2019 - 11.2019</p>
+    </div>
+    <div class="card-container">
+      <p>Helpdesk</p>
+      <p><strong>Metrosystems</strong></p>
+      <p class="about-description">05.2018 - 11.2018</p>
+    </div>
   </div>
 </div>
 
 <div class="grid flex sm:col-12">
   <h3 class="col-6 xl:col-6 sm:col-12 connect-title">Education</h3>
   <div class="col-6 xl:col-6 sm:col-12 connect-container">
-    <p>A lot of stuff</p>
-    <p>A lot of stuff</p>
+    <div class="contact-div">
+      <p><strong>Master,</strong> University Politehnica of Bucharest,</p>
+      <p><strong>Faculty of Automatic Control and Computer Science</strong></p>
+      <p>Internet Systems Engineering</p>
+      <p class="about-description">2023-2025</p>
+    </div>
+    <div class="contact-div">
+      <p><strong>Bachelor,</strong> University Politehnica of Bucharest,</p>
+      <p><strong>Faculty of Automatic Control and Computer Science</strong></p>
+      <p class="about-description">2017-2021</p>
+    </div>
   </div>
 </div>
