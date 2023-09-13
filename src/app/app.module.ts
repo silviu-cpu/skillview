@@ -96,13 +96,15 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgParticlesModule } from "ng-particles";
+import { LinkComponent } from './link/link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LinkComponent
   ],
   imports: [
     BrowserModule,
