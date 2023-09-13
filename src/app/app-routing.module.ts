@@ -16,18 +16,30 @@ const routes: Routes = [
     path: 'home',
     pathMatch: 'full',
     component: HomeComponent,
+    data: {
+      title: 'Skillview'
+    }
   },
   { path: 'about', 
     pathMatch: 'full',
-    component: AboutComponent
+    component: AboutComponent,
+    data: {
+      title: 'About | Skillview'
+    }
   }, 
   { path: 'projects', 
     pathMatch: 'full',
-    component: ProjectsComponent
+    component: ProjectsComponent,
+    data: {
+      title: 'Projects | Skillview'
+    }
   }, 
   { path: 'links', 
     pathMatch: 'full',
-    component: LinkComponent
+    component: LinkComponent,
+    data: {
+      title: 'Connect | Skillview'
+    }
   }
 
 ];

@@ -1,27 +1,36 @@
-a:hover {
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: var(--surface-800);
+@media screen and (max-width: 576px) {
+    .connect-container, .connect-title {
+        flex: 0 0 auto;
+        padding: 0.5rem;
+        width: 100%;
+    }
 }
 
 p {
     color: var(--surface-600);
 }
 
-p:first-child {
+.about-description {
     color: #7852A9;
     opacity: 0.8;
 }
 
-.pi-linkedin, .pi-twitter, .pi-instagram, .pi-github {
-    color: #7852A9;
+h3 {
+    color: var(--surface-800);
 }
 
-.avatar {
-    height: 86px;
-    width: 86px;
-    border-radius: 50%;
+.contact-div {
+    border: 1px solid var(--surface-400);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--surface-600);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-div:hover {
+    cursor: pointer;
+    border: 1px solid var(--surface-800);
+    color: var(--surface-800);
+    transition: ease-in 0.5s;
 }

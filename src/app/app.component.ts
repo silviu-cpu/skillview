@@ -3,6 +3,9 @@ import { ThemeService } from './theme.service';
 import { MenuItem } from 'primeng/api';
 import { MoveDirection, ClickMode, HoverMode, OutMode, Container, Engine } from "tsparticles-engine"
 import { loadSlim } from "tsparticles-slim"; 
+import { Title } from '@angular/platform-browser';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router'; 
+import { filter } from 'rxjs/operators';   
 
 @Component({
     selector: 'app-root',
@@ -11,7 +14,9 @@ import { loadSlim } from "tsparticles-slim";
 })
 export class AppComponent {
 
-    constructor(private themeService: ThemeService) {}
+    constructor(private themeService: ThemeService,private router: Router,  
+        private activatedRoute: ActivatedRoute,  
+        private titleService: Title) {}
 
     items: MenuItem[] | undefined;
     logo = 'dark-logo';
@@ -96,8 +101,23 @@ export class AppComponent {
                 routerLink: "projects"
             }
         ];
+        this.router.events.pipe(  
+            filter(event => event instanceof NavigationEnd),  
+          ).subscribe(() => {  
+            const rt = this.getChild(this.activatedRoute);  
+            rt.data.subscribe((data: { title: string; }) => {  
+              this.titleService.setTitle(data.title)});  
+          });  
     }
 
+    getChild(activatedRoute: ActivatedRoute): any {  
+        if (activatedRoute.firstChild) {  
+          return this.getChild(activatedRoute.firstChild);  
+        } else {  
+          return activatedRoute;  
+        }  
+      
+      }  
     particlesLoaded(container: Container): void {
         
     }
