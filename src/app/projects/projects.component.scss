@@ -27,6 +27,11 @@ img {
     color: var(--surface-600);
 }
 
+.project-name {
+    color: #7852A9;
+    opacity: 0.8;
+}
+
 .link-paragraph {
     color: var(--surface-600);
 }
@@ -39,6 +44,12 @@ img {
 
 .project-container:hover .link-paragraph {
     color: var(--surface-900);
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.project-container:hover .project-name {
+    opacity: 1;
     cursor: pointer;
     transition: 0.4s ease-in;
 }
