@@ -1,0 +1,52 @@
+img {
+    width: 80%;
+    height: 80%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desktop-div {
+    background-color: var(--surface-600);
+    height: 250px;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.project-container:hover .desktop-div {
+    background-color: var(--surface-900);
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.project-container:hover {
+    cursor: pointer;
+}
+
+.project-paragraph {
+    color: var(--surface-600);
+}
+
+.link-paragraph {
+    color: var(--surface-600);
+}
+
+.project-container:hover .project-paragraph {
+    color: var(--surface-900);
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.project-container:hover .link-paragraph {
+    color: var(--surface-900);
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+@media screen and (max-width: 576px) {
+    .projects-container, .projects-title {
+        flex: 0 0 auto;
+        padding: 0.5rem;
+        width: 100%;
+    }
+}
