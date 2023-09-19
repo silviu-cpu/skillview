@@ -7,9 +7,11 @@ import Typed from 'typed.js';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements AfterViewInit {
+export class AboutComponent implements OnInit,AfterViewInit {
   typed: Typed | undefined;
  
+  ngOnInit(): void {
+  }
 
   ngAfterViewInit(): void {
     const options = {

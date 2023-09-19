@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 import Typed from 'typed.js';
 
 @Component({
@@ -6,9 +6,12 @@ import Typed from 'typed.js';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements OnInit,AfterViewInit {
   typed: Typed | undefined;
 
+  ngOnInit() {
+    
+  }
   ngAfterViewInit(): void {
     const options = {
       strings: ['Silviu' , 'Skillview' ],

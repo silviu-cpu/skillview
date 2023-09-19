@@ -31,8 +31,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/typed.js@2.0.12/css/typed.css",
-              "node_modules/animate.css/animate.min.css",
               {
                 "input": "src/theme-saga-blue.scss",
                 "bundleName": "saga-blue",
