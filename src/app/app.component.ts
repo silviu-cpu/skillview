@@ -97,7 +97,7 @@ export class AppComponent {
                 routerLink: "about"
             },
             {
-                label: 'Projects',
+                label: 'Side Projects',
                 routerLink: "projects"
             }
         ];
