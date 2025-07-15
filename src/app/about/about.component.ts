@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
       strings: [
         'a software engineer',
         'a web developer',
-        'a frontend developer',
+        'a fullstack developer',
       ],
       typeSpeed: 50, // typing speed in milliseconds
       backSpeed: 25, // backspacing speed in milliseconds
