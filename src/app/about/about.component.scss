@@ -1,62 +1,68 @@
 @media screen and (max-width: 576px) {
-    .connect-container, .connect-title {
-        flex: 0 0 auto;
-        padding: 0.5rem;
-        width: 100%;
-    }
+  .connect-container,
+  .connect-title {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 100%;
+  }
 }
 
 p {
-    color: var(--surface-600);
+  color: var(--surface-600);
 }
 
 .about-description {
-    color: #7852A9;
-    opacity: 0.8;
+  color: #7852a9;
+  opacity: 0.8;
+}
+
+.work-description {
+  color: #7852a9;
+  font-weight: bold;
 }
 
 h3 {
-    color: var(--surface-800);
+  color: var(--surface-800);
 }
 
 .contact-div {
-    border: 1px solid var(--surface-400);
-    padding: 10px;
-    text-decoration: none;
-    color: var(--surface-600);
-    border-radius: 8px;
-    margin-bottom: 10px;
+  border: 1px solid var(--surface-400);
+  padding: 10px;
+  text-decoration: none;
+  color: var(--surface-600);
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .contact-div:hover {
-    cursor: pointer;
-    border: 1px solid var(--surface-800);
-    color: var(--surface-800);
-    transition: ease-in 0.5s;
+  cursor: pointer;
+  border: 1px solid var(--surface-800);
+  color: var(--surface-800);
+  transition: ease-in 0.5s;
 }
 
 .card-container {
-    border: 1px solid var(--surface-400);
-    padding: 10px;
-    text-decoration: none;
-    color: var(--surface-600);
-    border-radius: 8px;
-    margin-bottom: 10px;
+  border: 1px solid var(--surface-400);
+  padding: 10px;
+  text-decoration: none;
+  color: var(--surface-600);
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .card-container:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .card-container:first-of-type {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 :host ::ng-deep .p-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .connect-container .typing-text {
-    color: #7852A9;
-    font-weight: bold;
+  color: #7852a9;
+  font-weight: bold;
 }
