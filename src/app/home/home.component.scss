@@ -1,32 +1,40 @@
 a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none;
-    color: var(--surface-800);
+  text-decoration: none;
+  color: var(--surface-800);
 }
 
 p {
-    color: var(--surface-600);
+  color: var(--surface-600);
 }
 
 p:first-child {
-    color: #7852A9;
-    opacity: 0.8;
+  color: #7852a9;
+  opacity: 0.8;
 }
 
-.pi-linkedin, .pi-twitter, .pi-instagram, .pi-github {
-    color: #7852A9;
+.pi-linkedin,
+.pi-twitter,
+.pi-instagram,
+.pi-github {
+  color: #7852a9;
 }
 
 .avatar {
-    height: 86px;
-    width: 86px;
-    border-radius: 50%;
+  height: 86px;
+  width: 86px;
+  border-radius: 50%;
 }
 
 .typing-text {
-    font-size: 30px; 
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.academie {
+  color: #7852a9;
+  font-weight: bold;
 }
